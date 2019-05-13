@@ -1,8 +1,4 @@
 // Prim.cpp : Defines the entry point for the console application.
-//
-
-/* Karmen Unuk
-OA_N0000819_aklop3_naloga4: Minimalno vpeto drevo po Primovem postopku */
 
 /* Napišite program, ki poišèe minimalno vpeto drevo po Primovem postopku. V programu
    omogoèite, da boste lahko graf prebrali tudi iz datoteke. */
@@ -25,7 +21,7 @@ public:
 	int OdstraniPovezavo(int aI, int aJ);
 	bool JePovezava(int aI, int aJ);
 	int VrniUtez(int aI, int aJ);
-	//vector<int> VrniSeznamSosedov(int aI);
+	vector<int> VrniSeznamSosedov(int aI);
 	void IzpisMatrike();
 	int Min1(int &aJ, int* aP);
 	int Min(int &aJ);
@@ -89,7 +85,7 @@ int CGraf::VrniUtez(int aI, int aJ)
 		return -1;
 }
 
-/*vector<int> CGraf:: VrniSeznamSosedov(int aI)
+vector<int> CGraf:: VrniSeznamSosedov(int aI)
 {
 	vector<int> Sez;
 	for(int i = 0; i< stPovezav; i++){
